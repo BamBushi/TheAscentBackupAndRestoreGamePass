@@ -1,5 +1,5 @@
 $backups_folder_name = "TheAscentBackups"
-$backup_folder_name = "C:\Users\$env:USERNAME\Desktop\$backups_folder_name\"
+$backup_folder_path = "C:\Users\$env:USERNAME\Desktop\$backups_folder_name\"
 Write-Output $backup_folder_name
 
 #Paste the name of the zip file you want to restore here!

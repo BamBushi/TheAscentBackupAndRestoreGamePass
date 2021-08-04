@@ -1,6 +1,5 @@
-$backups_folder_path = "C:\Users\$env:USERNAME\Desktop\$backups_folder_name\"
-$backup_folder_name = "AscentBackup03082021_191655" + ".zip"
+. ./variables.ps1
 
-$full_path = $backups_folder_path + $backup_folder_name
+$full_path = $backup_folder_path + $backup_you_want_to_restore
 
 Expand-Archive -Path $full_path -DestinationPath "C:\Users\$env:USERNAME\AppData\Local\Packages\CurveDigital.TheAscent_1ezqdnbhnc70m\SystemAppData\wgs"

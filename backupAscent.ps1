@@ -1,16 +1,13 @@
-$backup_folder_name = "AscentBackup"
-$backups_folder_name = "TheAscentBackups"
+. ./variables.ps1
 
 $date_time = get-date -f ddMMyyyy_HHmmss
 
-$backup_folder_name = "C:\Users\$env:USERNAME\Desktop\$backups_folder_name"
-
-If(!(test-path $backup_folder_name))
+If(!(test-path $backup_folder_path))
 {
-      New-Item -ItemType Directory -Force -Path $backup_folder_name
+      New-Item -ItemType Directory -Force -Path $backup_folder_path
 }
 
-$backup_folder_zip_name = $backup_folder_name + "\TheAscentBackup_" + $date_time + ".zip"
+$backup_folder_zip_name = $backup_folder_path + "\TheAscentBackup_" + $date_time + ".zip"
 
 Write-Output $backup_folder_zip_name
 
