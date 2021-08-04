@@ -21,6 +21,7 @@ To Restore:
 > - Copy and paste the name of the zip file into the variables.ps1 file (open with notepad is fine)
 And the variable below should look like this.
 > - $backup_you_want_to_restore = "Backup_you_want_to_restore.zip"
+> - Save variables.ps1 and close
 > - Right click on the restpreAscent.ps1 and select "Run with Powershell"
 
 NOTE: Please don't try run these scripts while the game is running! :D
